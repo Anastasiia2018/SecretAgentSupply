@@ -7,6 +7,7 @@ body {
   font-size: 1rem;
   line-height: 1.4rem;
 }
+
 div {
   display: block;
 }
@@ -40,6 +41,30 @@ li {
   background-size: cover;
   height: 25rem;
 }
+@media only screen and (max-width: 1024px) {
+  .main-banner {
+    font-size: 16px;
+  }
+  .container {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 470px) {
+  .main-banner {
+    height: 15rem;
+  }
+  .headline {
+    top: 10rem;
+    width: 100%;
+    padding: 1rem 2rem;
+  }
+  .headline h4 {
+    font-size: 0.77rem;
+  }
+  .headline h1 {
+    font-size: 1rem;
+  }
+}
 .headline {
   font-size: Helvetica;
   padding: 2rem 3rem;
@@ -54,6 +79,7 @@ li {
   font-weight: bold;
   font-size: 1rem;
 }
+
 .headline h1 {
   font-size: 2rem;
   font-weight: bold;
@@ -62,6 +88,7 @@ li {
   padding-bottom: 0.25rem;
   line-height: 2.5rem;
 }
+
 /* Navigation */
 nav {
   background-color: firebrick;
@@ -78,6 +105,15 @@ nav ul {
 
 .mobile-nav {
   display: none;
+}
+@media only screen and (max-width: 1024px) {
+  nav ul {
+    display: none;
+  }
+  .mobile-nav.container{
+    display: block;
+    text-align: center;
+  }
 }
 /* Products */
 .products,
@@ -111,6 +147,10 @@ text-align: center;
 padding: 0.5rem;
 font-size: 1.1rem;
 }
+.mobile-nav {
+  display: none;
+}
+
 .info {
   width: 35%;
 }
@@ -121,6 +161,38 @@ font-size: 1.1rem;
   padding: 1rem 2rem;
   font-size: 1.1rem;
 }
+@media only screen and (max-width: 1024px){
+
+  .product {
+    width: 47%;
+  }
+
+  .info .title{
+    width: 116%;
+  }
+  .product.glasses {
+    display: none;
+  }
+  .business-info {
+    width: 79%;
+  }
+}
+@media only screen and (max-width: 470px) {
+  .product {
+    width: 90%;
+    margin: auto;
+  }
+  .product.watch {
+    display: none;
+  }
+  .info {
+    width: 90%;
+    margin: 0.5rem auto;
+  }
+  .products, .business-info {
+    flex-wrap: wrap;
+  }
+}
 /* Footer*/
 footer .container {
   background-color: black;
@@ -130,4 +202,9 @@ footer .container {
   margin-top: 4rem;
   font-size: 1.1rem;
   width: 100%;
+}
+@media only screen and (max-width: 470px) {
+  footer .container{
+    text-align: center;
+  }
 }
