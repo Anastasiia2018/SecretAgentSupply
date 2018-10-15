@@ -44,7 +44,7 @@ li {
 
 @media only screen and (max-width: 470px) {
   .main-banner {
-    max-height: 15rem;
+    height: 15rem;
   }
   .headline {
     top: 10rem;
@@ -193,5 +193,6 @@ footer .container {
 @media only screen and (max-width: 470px) {
   footer .container {
     text-align: center;
+    margin-bottom: 0;
   }
 }
