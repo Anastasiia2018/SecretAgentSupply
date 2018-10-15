@@ -44,7 +44,7 @@ li {
 
 @media only screen and (max-width: 470px) {
   .main-banner {
-    height: 15rem;
+    max-height: 15rem;
   }
   .headline {
     top: 10rem;
