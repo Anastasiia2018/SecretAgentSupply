@@ -1,5 +1,5 @@
 html {
-  font-size: 22px;
+  font-size: 16px;
 }
 body {
   font-family: Helvetica;
@@ -159,6 +159,7 @@ font-size: 1.1rem;
   padding: 1rem 2rem;
   font-size: 1.1rem;
 }
+
 @media only screen and (max-width: 1024px){
 
   .product {
@@ -186,17 +187,20 @@ font-size: 1.1rem;
   }
 }
 /* Footer*/
+footer .container {
+  margin-top: 4rem;
+  padding: 5rem 0;
+}
 footer {
   background-color: black;
   color: white;
   padding: 5rem 0;
-  text-align: left;
   margin-top: 4rem;
-  font-size: 1.1rem;
+  text-align: left;
+
 }
 @media only screen and (max-width: 470px) {
   footer {
     text-align: center;
-    margin-bottom: 0;
   }
 }
