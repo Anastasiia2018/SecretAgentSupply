@@ -1,6 +1,5 @@
 html {
   font-size: 22px;
-  background-color: white;
 }
 body {
   font-family: Helvetica;
@@ -30,7 +29,7 @@ li {
   margin-left: 12%;
 }
 .container {
-  width: 960px;
+  max- width: 960px;
   margin: 0 auto;
 }
 /* Main */
@@ -166,15 +165,8 @@ font-size: 1.1rem;
   .product {
     width: 47%;
   }
-
-  .info .title{
-    width: 116%;
-  }
   .product.glasses {
     display: none;
-  }
-  .business-info {
-    width: 79%;
   }
 }
 @media only screen and (max-width: 470px) {
@@ -189,7 +181,8 @@ font-size: 1.1rem;
     width: 90%;
     margin: 0.5rem auto;
   }
-  .products, .business-info {
+  .products,
+  .business-info {
     flex-wrap: wrap;
   }
 }
